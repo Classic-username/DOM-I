@@ -41,16 +41,15 @@ const siteContent = {
 // let logo = document.getElementById("logo-img");
 // logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let yo = document.createElement('a')
-let yoyo = document.createElement('a')
+
 
 
 
 let nav = document.querySelector('nav')
+let yo = document.createElement('a')
+let yoyo = document.createElement('a')
 yo.textContent = 'Yo'
 yoyo.textContent = 'Yoyo'
-
-
 nav.appendChild(yoyo)
 nav.prepend(yo)
 
@@ -69,12 +68,12 @@ let footerP = document.querySelector('footer p')
 console.log(contactP)
 
 
-navA[0].textContent = siteContent.nav['nav-item-1']
-navA[1].textContent = siteContent.nav['nav-item-2']
-navA[2].textContent = siteContent.nav['nav-item-3']
-navA[3].textContent = siteContent.nav['nav-item-4']
-navA[4].textContent = siteContent.nav['nav-item-5']
-navA[5].textContent = siteContent.nav['nav-item-6']
+navA[1].textContent = siteContent.nav['nav-item-1']
+navA[2].textContent = siteContent.nav['nav-item-2']
+navA[3].textContent = siteContent.nav['nav-item-3']
+navA[4].textContent = siteContent.nav['nav-item-4']
+navA[5].textContent = siteContent.nav['nav-item-5']
+navA[6].textContent = siteContent.nav['nav-item-6']
 
 firstImg.src = siteContent.nav['img-src']
 
@@ -87,7 +86,7 @@ h4Main[1].textContent = siteContent["main-content"]['about-h4']
 h4Main[2].textContent = siteContent["main-content"]['services-h4']
 h4Main[3].textContent = siteContent["main-content"]['product-h4']
 h4Main[4].textContent = siteContent["main-content"]['vision-h4']
-thirdImg.src = 'img/mid-page-accent.jpg'
+thirdImg.src = siteContent['main-content']['middle-img-src']
 pMain[0].textContent = siteContent["main-content"]['features-content']
 pMain[1].textContent = siteContent["main-content"]['about-content']
 pMain[2].textContent = siteContent["main-content"]['services-content']
