@@ -41,8 +41,20 @@ const siteContent = {
 // let logo = document.getElementById("logo-img");
 // logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+let yo = document.createElement('a')
+let yoyo = document.createElement('a')
+
+
 
 let nav = document.querySelector('nav')
+yo.textContent = 'Yo'
+yoyo.textContent = 'Yoyo'
+
+
+nav.appendChild(yoyo)
+nav.prepend(yo)
+
+
 let navA = document.querySelectorAll('nav a')
 let firstImg = document.querySelector('#logo-img')
 let h1 = document.querySelector('h1')
@@ -92,15 +104,7 @@ footerP.textContent = siteContent.footer['copyright']
 
 
 
-let yo = document.createElement('a')
-let yoyo = document.createElement('a')
 
-yo.textContent = 'Yo'
-yoyo.textContent = 'Yoyo'
-
-
-nav.appendChild(yoyo)
-nav.prepend(yo)
 
 navA.forEach((object) => {
   return object.style.color = 'green'
